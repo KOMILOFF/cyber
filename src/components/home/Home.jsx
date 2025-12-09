@@ -8,7 +8,7 @@ import mak from "../../assets/mak.png";
 import mix from "../../assets/mix.png"
 import ipad64 from "../../assets/image 64.png"
 import fold from "../../assets/image 41.png"
-import mac from "../../assets/macBro.png"
+import mac from "../../assets/macbro.png"
 import { PiBracketsAngleBold } from "react-icons/pi";
 import { SlScreenSmartphone } from "react-icons/sl";
 import { BsSmartwatch } from "react-icons/bs";
