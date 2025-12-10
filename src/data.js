@@ -158,5 +158,23 @@ export const products = [
     color: "Silver",
     image: ipad9
   },
+     {
+    id: 17,
+    title: "Apple iPhone 11",
+    price: 550,
+    category: "Phones",
+    memory: "128GB",
+    color: "White",
+    image: ip11
+  },
+    {
+    id: 3,
+    title: "Apple iPhone 14 pro",
+    price: 1499,
+    category: "Phones",
+    memory: "1TB",
+    color: "Gold",
+    image: ip14pro
+  },
 
 ]

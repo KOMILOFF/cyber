@@ -168,6 +168,8 @@ border-radius: 5px;
   font-size: 25px;
 }
 .sections div{
+  transition: all 0.6s;
+  cursor: pointer;
   width: 150px;
   height: 130px;
   background-color: #EDEDED;
@@ -437,6 +439,11 @@ border-radius: 5px;
   font-size: 20px;
 }
 
+.sections div:hover {
+width: 170px;
+height: 150px;
+box-shadow: 0 15px 30px grey;
+}
 
 
 

@@ -17,7 +17,9 @@ import { FiHeadphones } from "react-icons/fi";
 import { FaComputer } from "react-icons/fa6";
 import { LuGamepad } from "react-icons/lu";
 import { products } from "../../data";
-const Home = () => {
+import { Navigate, useNavigate } from "react-router-dom";
+const Home = ({addToCart}) => {
+  const navigate = useNavigate();
   const homeProducts = products.filter((item) =>
     [9, 10, 10, 11, 12, 13, 14, 15, 16].includes(item.id)
   );
@@ -99,42 +101,42 @@ const Home = () => {
           </div>
           {/* category sections */}
           <div className="sections">
-            <div>
+            <div className="phone-sect" onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <SlScreenSmartphone />
               </p>
               <p id="sec-nic">Phones</p>
             </div>
 
-            <div>
+            <div onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <BsSmartwatch />
               </p>
               <p id="sec-nic">Smartwatches</p>
             </div>
 
-            <div>
+            <div onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <IoCameraOutline />
               </p>
               <p id="sec-nic">Cameras</p>
             </div>
 
-            <div>
+            <div onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <FiHeadphones />
               </p>
               <p id="sec-nic">Headphones</p>
             </div>
 
-            <div>
+            <div onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <FaComputer />
               </p>
               <p id="sec-nic">Computers</p>
             </div>
 
-            <div>
+            <div onClick={() => navigate("./smartphones")}>
               <p className="sect-icon">
                 <LuGamepad />
               </p>
@@ -164,7 +166,7 @@ const Home = () => {
               </p>
               <p className="card-price">{item.price}$</p>
               <p>{item.category}</p>
-              <button className="card-btn">Buy Now</button>
+              <button className="card-btn" onClick={() => addToCart(item)}>Buy Now</button>
             </div>
           ))}
         </div>
@@ -228,38 +230,6 @@ const Home = () => {
           </div>
 
       </div>
-
-      {/* Footer */}
-      <footer className="site-footer">
-        <div className="footer-div">
-
-      <div className="foot-first">
-        <h3 className="first-title">cyber</h3>
-        <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
-      </div>
-
-      <div className="foot-second">
-        <h3 className="second-title">Services</h3>
-        <p className="second-opt">Bonus program</p>
-        <p className="second-opt">Gift cards</p>
-        <p className="second-opt">Credit and payment</p>
-        <p className="second-opt">Service contracts</p>
-        <p className="second-opt">Non-cash account</p>
-        <p className="second-opt">Payment</p>
-      </div>
-
-      <div className="foot-third">
-        <h3 className="third-title">Assistance to the buyer</h3>
-        <p className="third-opt">Find an order</p>
-        <p className="third-opt">Terms of delivery</p>
-        <p className="third-opt">Exchange and terurn of goods</p>
-        <p className="third-opt">Guarante</p>
-        <p className="third-opt">Frequently asked questions</p>
-        <p className="third-opt">Terms of use of the site</p>
-      </div>
-
-        </div>
-      </footer>
 
       </div>
   );
