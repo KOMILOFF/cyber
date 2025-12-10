@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import step1Img from "../assets/Step 1.png";
 import step2 from "../assets/Step 5.png";
-import step3 from "../assets/Step 3.png";
+import step3 from "../assets/Step3.png";
 import { MdModeEdit } from "react-icons/md";
 import { ImCancelCircle } from "react-icons/im";
 

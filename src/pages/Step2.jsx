@@ -1,7 +1,7 @@
 import React from "react";
 import secons from "../assets/secons.png";
 import midd from "../assets/midd.png";
-import lates from "../assets/step 3.png";
+import lates from "../assets/Step3.png";
 import { FaAngleDown } from "react-icons/fa";
 import "../../src/index.css";
 import { Link } from "react-router-dom";
